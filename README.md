@@ -11,7 +11,7 @@ Follow the steps below to run the project locally:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Sulagna-pradhan/University-Ranking.git
 ```
 
 ### 2. Install Dependencies
