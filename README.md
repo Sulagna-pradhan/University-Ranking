@@ -1,6 +1,3 @@
-Sure! Here's the updated `README.md` with the change:
-
-````markdown
 # World University Rankings Project
 
 This project displays the global university rankings for various universities. It allows users to view detailed information about universities, including their name, country, city, and global rank.
@@ -16,7 +13,6 @@ Clone this repository to your local machine using the following command:
 ```bash
 git clone <repository-url>
 ```
-````
 
 ### 2. Install Dependencies
 
@@ -42,14 +38,30 @@ In the `backend` directory, start the server by running:
 python backend.py
 ```
 
-This will start the server and expose the data that will be used by the front-end (HTML) to display the university rankings.
+This will start the server and expose the data that will be used by the frontend to display the university rankings.
 
-### 4. Run the Frontend (HTML)
+### 4. Run the Frontend
 
 Once the server is running, open the `index.html` file in your browser. This file will fetch data from the backend server and display the university rankings.
 
+To open the file:
+
+- On macOS:
+
 ```bash
 open index.html
+```
+
+- On Windows:
+
+```bash
+start index.html
+```
+
+- On Linux:
+
+```bash
+xdg-open index.html
 ```
 
 Alternatively, you can open the `index.html` file manually in your browser.
@@ -63,6 +75,8 @@ Here’s an overview of the project structure:
     ├── backend.py            # Python server to serve data
     ├── universities.csv      # CSV file containing university data (university, country, city, rank)
 - index.html                  # Frontend HTML to display the data
+- styles.css
+- script.js
 ```
 
 ### Backend (`backend.py`)
@@ -75,7 +89,7 @@ The `backend.py` uses the `pandas` library to read the CSV file and returns the 
 
 The `index.html` file is a basic webpage that fetches the university ranking data from the server. It uses JavaScript to fetch the data and display it in an HTML table.
 
-The table will list the following columns:
+The table lists the following columns:
 
 - **University**: Name of the university.
 - **Country**: The country where the university is located.
@@ -96,8 +110,3 @@ Feel free to contribute to the project by submitting issues or pull requests. Ma
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-
-### Key Changes:
-- **Install Dependencies**: Added the line to install Flask and Pandas with `pip install flask pandas` as there is no `requirements.txt`.
-```
